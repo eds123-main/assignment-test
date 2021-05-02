@@ -1,0 +1,18 @@
+---
+title: "An amazing graph"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+Task: change the color of the points in the graph below to "purple" and add your name as the graph title.
+
+```{r}
+ggplot(data = trees, aes(x = Girth, y = Height)) +
+  geom_point(color = "orange", size = 2) +
+  labs(title = "Replace with your name")
+```
+
